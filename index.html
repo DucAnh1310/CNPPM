@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>
+
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+                font-family: "Glory", sans-serif;
+                font-size: 18px;
+            }
+
+            #header {
+                position: fixed;
+                background-color: white;
+                box-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 8%);
+                padding: 0;
+                top: 0;
+                z-index: 110;
+            }
+
+            #menu {
+
+                display: inline-block;
+                box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+                margin-right: 15px;
+                height: 80px;
+
+            }
+
+
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background: #112F55;
+                background-color: transparent;
+                padding-top: 25px;
+            }
+
+
+            li{
+                float: left;
+                border-right: 1px solid white;
+                padding-right: 0.5rem;
+            }
+
+            li.dropdown {
+                display: inline-block;
+            }
+
+            li a:hover,
+            .dropdown:hover {
+                background: #879AB4;
+            }
+
+            li a,
+            .dropdown-btn {
+                display: inline-block;
+                color: #333;
+                text-align: center;
+                padding: 0 7px;
+                text-decoration: none;
+            }
+
+            .dropdown-content a:hover {
+                background-color: #E3C260;
+            }
+
+            .item {
+                text-align: left;
+                padding-left: 10px;
+                font-weight: bolder;
+            }
+
+            .item-symbol {
+                font-size: 10px;
+                position: relative;
+                top: -3px;
+            }
+            #nav {
+                float: right;
+            }
+
+            .button {
+                background-color: #112F55;
+                color: white;
+                padding: 8px;
+                border-radius: 20px;
+                font-size: 15px;
+            }
+            .button:hover {
+                background-color: #E3C260
+            }
+
+            #noidung1 {
+                position: relative;
+                top: 150px;
+            }
+            .noidung1 {
+                float: left;
+                padding-left: 180px;
+                width: 300px;
+                font-size: 21px;
+
+            }
+
+            .noidung1 a,h2{
+                color: #112F55;
+                font-weight: bold;
+                font-size: 36px;
+                text-decoration: none;
+            }
+            .nd1 {
+                display: inline-block;
+                background-color: white;
+                box-shadow: 0 0 15px 2px silver;
+                border-radius: 20px;
+                text-align: center;
+                font-size: 15px;
+                width: 180px;
+                height: 225px;
+                padding-top: 30px;
+                margin: 10px;
+            }
+            .nd1:hover{
+                background: #E3C260;
+            }
+
+            #gioithieu {
+                position: relative;
+                top: 210px;
+                width: 1140px;
+                height: 615px;
+                margin-left: 180px;
+                box-shadow: 0 0 15px 1px gainsboro;
+                padding-left: 15px;
+                padding-top: 10px;
+                font-size: 21px;
+            }
+
+            #gioithieu a,h2{
+                color: #112F55;
+                font-weight: bold;
+                font-size: 36px;
+                text-decoration: none;
+
+            }
+
+            .text {
+                width: 1120px;
+                border-top: 2px solid black;
+            }
+
+            .nd2 {
+                float: left;
+                width: 450px;
+                font-size: 21px;
+            }
+            .nd2 h1{
+                font-size: 46px;
+            }
+            .content2 {
+                float: right;
+                width: 450px;
+                padding-right: 40px;
+            }
+
+
+            .img1 {
+                float: right;
+                width: 150px;
+                padding-right: 40px;
+                padding-top: 20px;
+            }
+
+            .img2 {
+                float: right;
+                width: 450px;
+                padding-right: 40px;
+                padding-top: 20px;
+            }
+            #footer {
+                background-color: #e1e1e1;
+                text-align: left;
+                width: 100%;
+                height: 500px;
+                padding-left: 120px;
+                box-sizing: border-box;
+                margin-top: 250px;
+                font-weight: 600;
+            }
+
+
+            .footer-detail {
+                font-size: 16px;
+                height: 220px;
+                display: block;
+            }
+
+            .title {
+                text-transform: uppercase;
+                font-size: 21px;
+                float: left;
+                border-bottom: 1px solid blue;
+                width: 1200px;
+                padding: 20px;
+            }
+
+            .box1 {
+                float: left;
+                padding: 10px;
+                margin: 0px;
+                box-sizing: border-box;
+                width: 350px;
+                list-style-type: none;
+                overflow: visible;
+            }
+
+            .box2 {
+                float: left;
+                padding: 10px;
+                margin: 0px;
+                box-sizing: border-box;
+                width: 350px;
+                list-style-type: none;
+                overflow: visible;
+            }
+
+            .box3 {
+                float: left;
+                padding: 10px;
+                margin: 0px;
+                box-sizing: border-box;
+                width: 350px;
+                list-style-type: none;
+                overflow: visible;
+            }
+
+            .box {
+                background: none;
+                border: none;
+                padding-top: 5px;
+            }
+
+            .box li {
+                background: none;
+                border: none;
+                clear: both;
+            }
+
+
+            .footer-detail li {
+                padding: 5px 0;
+            }
+    </style>
+</head>
+
+    <body>
+        <div id="header">
+                <div id="menu">
+                    <ul class="menu">
+
+                        <li class="dropdown">
+                            <a href="{{ url_for('index') }}">Trang chủ</a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="{{ url_for('login') }}">Đặt lịch</a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#gioithieu">Giới thiệu</a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="{{ url_for('lienhe') }}">Liên hệ</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div id="nav">
+                    <ul class="nav">
+                        <li>
+                            <a class="button" href="{{ url_for('login') }}">Log in</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+
+
+        <div id="noidung1">
+                <div class="noidung1">
+                    <a>
+                        <h2>PHÒNG KHÁM<br>OPEN</h2>
+                    </a>
+                    <p>Thương hiệu số 1 tại Châu Á về đào tạo Chuyên gia Mỹ thuật Đa phương tiện.</p>
+                </div>
+
+                <div class="nd1">
+                    <img src="images/index/icon-1.png" width="100px">
+                    <p>25 năm kinh nghiệm</p>
+                </div>
+
+
+                <div class="nd1">
+                    <img src="images/index/icon-2.png" width="100px">
+                    <p>250 trung tâm</p>
+                </div>
+
+
+                <div class="nd1">
+                    <img src="images/index/icon-3.png" width="100px">
+                    <p>450.000 học viên</p>
+                </div>
+
+
+                <div class="nd1">
+                    <img src="images/index/icon-4.png" width="100px">
+                    <p>20 quốc gia</p>
+                </div>
+        </div>
+
+
+
+        <div id="gioithieu">
+                <a href="#">
+                    <h2>Đào tạo - tuyển sinh</h2>
+                </a>
+                <div class="text">
+                    <p>Chương trình Chuyên gia Mỹ thuật Đa phương tiện (Arena Multimedia Specialist Program - AMSP) kéo dài 30 tháng (4 kỳ học) trong lĩnh vực: Thiết kế Truyền thông & Quảng cáo và Sản xuất Nội dung Giải trí Kỹ thuật số.</p>
+
+                </div>
+
+                <div class="nd2">
+                    <h1>THIẾT KẾ WEB & ỨNG DỤNG KỸ THUẬT SỐ</h1>
+                    <p>Học kỳ 2 cung cấp những kiến thức để thiết kế ra giao diện một website hoàn chỉnh cùng nhứng ứng dụng phục vụ cho Digital Marketing, Social Media, App Mobile. Để làm được điều đó, học viên phải trải qua các môn học như: Thiết kế giao diện web cơ bản, phát triển trang web tương tác, sử dụng hình ảnh động cho web bằng Animate CC, tiếp thị số & khái niệm truyền thông... Kết thúc học kỳ 2, học viên sẽ có cơ hội đảm nhận nhiều vị trí khác nhau, từ nhà thiết kế web đến thiết kế dồ họa động.</p>
+
+                </div>
+                <div class="content2">
+                    <div class="img1">
+                        <img src="images/index/hk2-title.webp" width="150px">
+                    </div>
+                    <div class="img2">
+                        <img src="images/index/hk2-img.jpg" width="450px">
+                    </div>
+                </div>
+        </div>
+
+
+        <div id="footer">
+                <div class="footer-detail">
+                    <div class="title">TP.HCM</div>
+                    <div class="box1">
+                        <h3>Nguyễn Đình Chiểu</h3>
+                        <hr>
+                        <ul class="box">
+                            <li>212-214 Nguyễn Đình Chiểu, P. Võ Thị Sáu, Q. 3</li>
+                            <li>Tel: 1800 1525</li>
+                            <li>Email: arena@aprotrain.com</li>
+                        </ul>
+                    </div>
+
+                    <div class="box2">
+                        <h3>Nguyễn Kiệm</h3>
+                        <hr>
+                        <ul class="box">
+                            <li>778/10 Nguyễn Kiệm, P. 4, Q. Phú Nhuận</li>
+                            <li>Tel: 1800 6325</li>
+                            <li>Email: arena@aprotrain.com</li>
+                        </ul>
+                    </div>
+
+                    <div class="box3">
+                        <h3>Tân Kỳ Tân Quý</h3>
+                        <hr>
+                        <ul class="box">
+                            <li>Số 6, Tân Kỳ Tân Quý, P.15, Q.Tân Bình</li>
+                            <li>Tel: 1800 2074</li>
+                            <li>Email: arena@aprotrain.com</li>
+                        </ul>
+
+                    </div>
+                </div>
+        </div>
+
+    </body>
+</html>
